@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBEE4A33-1D53-4C42-8722-6110B3078739}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractFactoryMode\AbstractFactoryMode.csproj">
+      <Project>{775665b6-12f3-45a3-9dec-27f41755c0f1}</Project>
+      <Name>AbstractFactoryMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdapterMode\AdapterMode.csproj">
+      <Project>{4ba624ad-8cf9-4af3-bc6a-97767c2d49ec}</Project>
+      <Name>AdapterMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuilderMode\BuilderMode.csproj">
+      <Project>{b78c6cad-1f29-4c2c-b108-9b905eddccd4}</Project>
+      <Name>BuilderMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompositeMode\CompositeMode.csproj">
+      <Project>{c720b350-711c-4d81-9413-d43a93f3a7c3}</Project>
+      <Name>CompositeMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FactoryMode\FactoryMode.csproj">
+      <Project>{02514189-225e-4e4e-89e9-936ff8a38fda}</Project>
+      <Name>FactoryMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrototypeMode\PrototypeMode.csproj">
+      <Project>{cf24a0d5-b6b2-4723-bf6d-aa786d4917e7}</Project>
+      <Name>PrototypeMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Singleton\Singleton.csproj">
+      <Project>{7ebda0bd-93d8-46c8-91f7-981070f1472a}</Project>
+      <Name>Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatePatternSample\StatePatternModel.csproj">
+      <Project>{943dee29-5f67-41cc-b07c-a885b7071111}</Project>
+      <Name>StatePatternModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VistorPattern\VistorPatternModel.csproj">
+      <Project>{a2ceea73-8d47-4cac-9ddf-c478fdc181c1}</Project>
+      <Name>VistorPatternModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
